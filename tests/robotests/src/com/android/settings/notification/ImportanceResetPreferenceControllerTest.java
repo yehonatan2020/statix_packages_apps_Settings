@@ -26,10 +26,10 @@ import static org.mockito.Mockito.when;
 import android.content.Context;
 import android.view.View;
 
-import androidx.preference.Preference;
 import androidx.preference.PreferenceScreen;
 
 import com.android.settings.R;
+import com.android.settingslib.widget.LayoutPreference;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -43,11 +43,12 @@ import org.robolectric.util.ReflectionHelpers;
 @RunWith(RobolectricTestRunner.class)
 public class ImportanceResetPreferenceControllerTest {
 
+    private static final String KEY = "asst_importance_reset";
     private ImportanceResetPreferenceController mController;
 
     @Mock
     private PreferenceScreen mScreen;
-    private Preference mPreference;
+    private LayoutPreference mPreference;
     private Context mContext;
     @Mock
     private NotificationBackend mBackend;
@@ -57,10 +58,9 @@ public class ImportanceResetPreferenceControllerTest {
         MockitoAnnotations.initMocks(this);
 
         mContext = RuntimeEnvironment.application;
-        mPreference = new Preference(mContext);
-        mPreference.setKey(ImportanceResetPreferenceController.KEY);
+        mPreference = new LayoutPreference(mContext, R.layout.reset_importance_button);
         when(mScreen.findPreference(anyString())).thenReturn(mPreference);
-        mController = new ImportanceResetPreferenceController(mContext, "some_key");
+        mController = new ImportanceResetPreferenceController(mContext, KEY);
         mController.displayPreference(mScreen);
 
         ReflectionHelpers.setField(mController, "mBackend", mBackend);
@@ -68,7 +68,10 @@ public class ImportanceResetPreferenceControllerTest {
 
     @Test
     public void onClick_callReset() {
-        mController.handlePreferenceTreeClick(mPreference);
+        final View view = mPreference.findViewById(R.id.reset_importance_button);
+        mController.updateState(mPreference);
+        assertThat(view.getVisibility()).isEqualTo(View.VISIBLE);
+        view.performClick();
 
         verify(mBackend, times(1)).resetNotificationImportance();
     }
