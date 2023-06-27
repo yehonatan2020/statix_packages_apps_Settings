@@ -12575,7 +12575,7 @@
     <!-- Label explaining that updating the date and time on the device. [CHAR LIMIT=60] -->
     <string name="financed_privacy_config_date_time">Change date, time, and time zones</string>
     <!-- Label explaining that turning on the developer options on the device. [CHAR LIMIT=40]-->
-    <string name="financed_privacy_developer_options">Use developer options</string>
+    <string name="financed_privacy_developer_options">Use Development Settings</string>
     <!-- Section header. This section shows how credit provider would control the device. [CHAR LIMIT=40]-->
     <string name="financed_privacy_credit_provider_capabilities_category">Your credit provider can:</string>
     <!-- Label explaining that IMEI can be access by the credit provider. [CHAR LIMIT=40] -->

@@ -24,12 +24,12 @@
     <string name="confirmation_turn_on" msgid="2979094011928347665">"Turn on"</string>
     <string name="device_info_default" msgid="1406619232867343310">"Unknown"</string>
     <plurals name="show_dev_countdown" formatted="false" msgid="1646187747875476269">
-      <item quantity="other">You are now <xliff:g id="STEP_COUNT_1">%1$d</xliff:g> steps away from being a developer.</item>
-      <item quantity="one">You are now <xliff:g id="STEP_COUNT_0">%1$d</xliff:g> step away from being a developer.</item>
+      <item quantity="other">You are now <xliff:g id="STEP_COUNT_1">%1$d</xliff:g> steps away from enabling development settings.</item>
+      <item quantity="one">You are now <xliff:g id="STEP_COUNT_0">%1$d</xliff:g> step away from enabling development settings.</item>
     </plurals>
-    <string name="show_dev_on" msgid="2840850085134853754">"You are now a developer!"</string>
+    <string name="show_dev_on" msgid="2840850085134853754">"You now have development settings enabled!"</string>
     <string name="show_dev_already" msgid="7041756429707644630">"No need, you are already a developer."</string>
-    <string name="dev_settings_disabled_warning" msgid="6971867026249671244">"Please enable developer options first."</string>
+    <string name="dev_settings_disabled_warning" msgid="6971867026249671244">"Please enable development settings first."</string>
     <string name="header_category_wireless_networks" msgid="303445626075235229">"Wireless &amp; networks"</string>
     <string name="header_category_system" msgid="1665516346845259058">"System"</string>
     <string name="radioInfo_service_in" msgid="9088637745836646271">"In service"</string>
@@ -5240,7 +5240,7 @@
     <string name="financed_privacy_safe_mode" msgid="5362149445732602578">"Reboot your device into safe mode"</string>
     <string name="financed_privacy_multi_users" msgid="1727194928477613081">"Add multiple users to your device"</string>
     <string name="financed_privacy_config_date_time" msgid="8567370445374984365">"Change date, time and time zones"</string>
-    <string name="financed_privacy_developer_options" msgid="7602001474669831672">"Use Developer options"</string>
+    <string name="financed_privacy_developer_options" msgid="7602001474669831672">"Use Development Settings"</string>
     <string name="financed_privacy_credit_provider_capabilities_category" msgid="8737902277892987998">"Your credit provider can:"</string>
     <string name="financed_privacy_IMEI" msgid="1852413860963824799">"Access your IMEI number"</string>
     <string name="financed_privacy_factory_reset" msgid="8915355477801723433">"Factory reset your device"</string>
