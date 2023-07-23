@@ -14100,7 +14100,7 @@
     <!-- Title for app pinning main switch. [CHAR LIMIT=50] -->
     <string name="app_pinning_main_switch_title">Use app pinning</string>
     <!-- Title for developer options main switch. [CHAR LIMIT=50] -->
-    <string name="developer_options_main_switch_title">Use developer options</string>
+    <string name="developer_options_main_switch_title">Use Development settings</string>
     <!-- Title for default print service main switch. [CHAR LIMIT=50] -->
     <string name="default_print_service_main_switch_title">Use print service</string>
     <!-- Title for multiple users main switch. [CHAR LIMIT=50] -->
